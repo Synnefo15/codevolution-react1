@@ -1,8 +1,10 @@
 import React,{Component} from 'react';
 
 class Welcome extends Component{
-    render(){
-        return <h3>Class Component</h3>
+    render(){ // % Tanpa param props harus pake this 
+        return (
+            <h3>Welcome Component {this.props.name} umur {this.props.age}</h3>
+        )
     }
 
 }

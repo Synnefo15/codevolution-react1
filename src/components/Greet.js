@@ -6,8 +6,15 @@ import React from 'react';
 // }
 
 // &---- Const func ----
-const Greet = () => {
-    return <h1>Hallo Class rafi</h1>
+const Greet = (props) => {
+    return (
+			<div>
+				<h1>
+					Hallo Class {props.name} age {props.age}
+				</h1>
+                {props.children}
+			</div>
+		);
 }
 
 export default Greet

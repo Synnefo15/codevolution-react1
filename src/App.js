@@ -3,9 +3,11 @@ import './App.css';
 import Greet from './components/Greet';
 import Welcome from './components/Welcome';
 import Hello from './components/Hello';
+import Message from './components/Message';
+import Counter from './components/Counter';
 
 function App() {
-  return (
+	return (
 		<div className="App">
 			<Greet name="rafi" age="21">
 				<p>Esse ullam quis.</p>
@@ -15,6 +17,8 @@ function App() {
 			<Welcome name="Putra" age="23" />
 			<Welcome name="mujo" age="23" />
 			<Hello />
+			<Message />
+			<Counter />
 		</div>
 	);
 }

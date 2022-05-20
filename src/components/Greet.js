@@ -6,13 +6,12 @@ import React from 'react';
 // }
 
 // &---- Const func ----
-const Greet = (props) => {
+const Greet = ({name,age}) => {
     return (
 			<div>
 				<h1>
-					Hallo Class {props.name} age {props.age}
+					Hallo Class {name} age {age}
 				</h1>
-                {props.children}
 			</div>
 		);
 }

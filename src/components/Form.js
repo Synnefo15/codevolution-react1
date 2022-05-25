@@ -29,10 +29,10 @@ class Form extends Component {
 		});
 	};
 
-    handleSubmit = (event) => { 
-        alert(`${this.state.username} ${this.state.comments}`);
-        event.preventDefault()
-     }
+	handleSubmit = (event) => {
+		alert(`${this.state.username} ${this.state.comments}`);
+		event.preventDefault();
+	};
 
 	render() {
 		return (
@@ -58,7 +58,7 @@ class Form extends Component {
 						<option value="banci">Banci</option>
 					</select>
 				</div>
-                <button type='submit'>submit</button>
+				<button type="submit">submit</button>
 			</form>
 		);
 	}

@@ -8,26 +8,50 @@ class LifeCycleA extends Component {
 		this.state = {
 			name: 'rafi',
 		};
-        console.log(`Ini construk`);
+		console.log(`Ini construk`);
 	}
 
-    static getDerivedStateFromProps(props, state){
-        console.log(`ini get derived`);
-        return null
-        
-    }
+	static getDerivedStateFromProps(props, state) {
+		console.log(`ini get derived`);
+		return null;
+	}
+
+	shouldComponentUpdate() {
+		console.log(`ini ShouldComponent`);
+		return true;
+	}
+
+	getSnapshotBeforeUpdate(prevProps, prevState) {
+		console.log(`ini snapshot before`);
+		return null;
+	}
+
+	componentDidUpdate() {
+		console.log(`component did update`);
+		return null;
+	}
+
+	componentDidMount() {
+		console.log(`componenDidMount`);
+	} // % Dieksekusi terkahir
+
+	changeState = () => {
+		this.setState({
+			name: 'codevolution ',
+		});
+	};
+
     
-    componentDidMount(){
-        console.log(`componenDidMount`);
-    } // % Dieksekusi terkahir 
-    
+
 	render() {
-        console.log(`ini render`);
+		console.log(`ini render`);
 		return (
-        <div>
-            LifeCycleA
-            {/* <LifeCycB /> */}
-        </div>);
+			<div>
+				LifeCycleA
+				<button onClick={this.changeState}>Change State</button>
+				<LifeCycB />
+			</div>
+		);
 	}
 }
 

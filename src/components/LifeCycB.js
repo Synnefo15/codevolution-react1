@@ -19,6 +19,22 @@ class LifeCycB extends Component {
 		console.log(`componenDidMount`);
 	}
 
+	shouldComponentUpdate() {
+		console.log(`ini ShouldComponent`);
+		return true;
+	}
+
+	getSnapshotBeforeUpdate(prevProps, prevState) {
+		console.log(`ini snapshot before`);
+		return null
+	}
+
+	componentDidUpdate() {
+		console.log(`component did update`);
+		return null;
+
+	}
+
 	render() {
 		console.log(`ini render`);
 		return <div>LifeCycB</div>;

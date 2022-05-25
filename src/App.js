@@ -16,14 +16,18 @@ import './appStyle.css'
 // import styles from './appStyle.module.css'
 // import Form from './components/Form';
 // import LifeCycleA from './components/LifeCycleA';
-import FragmentDemo from './components/FragmentDemo';
-import Table from './components/Table';
+// import FragmentDemo from './components/FragmentDemo';
+// import Table from './components/Table';
+import PureComp from './components/PureComp';
+import ParentComp from './components/ParentComp';
 
 function App() {
 	return (
 		<div className="App">
-			<Table />
-			<FragmentDemo />
+			<ParentComp />
+			{/* <PureComp /> */}
+			{/* <Table />
+			<FragmentDemo /> */}
 			{/* <LifeCycleA /> */}
 			{/* <Form /> */}
 			{/* <h1 className='error'>error</h1>

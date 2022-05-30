@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
 
+
+
 class Welcome extends Component{
     render(){ // % Tanpa param props harus pake this 
         const{name,age}=this.props // % destrukturing 

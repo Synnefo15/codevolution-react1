@@ -1,16 +1,18 @@
 import './App.css';
-import ErrorBoundary from './components/ErrorBoundary';
-import Hero from './components/Hero';
-import PortalDemo from './components/PortalDemo';
-
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
 
 function App() {
 	return (
 		<div className="App">
-			<ErrorBoundary>
-				<Hero heroname="Batman" />
-				<Hero heroname="Joker"/>
-			</ErrorBoundary>
+			{/* <Counter3>
+				{(count, incrementCount) => (
+					<ClickCounter2 count={count} incrementCount={incrementCount}></ClickCounter2>
+				)}
+			</Counter3> */}
+			<UserProvider value="rafi">
+				<ComponentC />
+			</UserProvider>
 		</div>
 	);
 }
